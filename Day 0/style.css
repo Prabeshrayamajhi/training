@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    /* background-color: aqua; */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000000000000;
+}
+
+nav {
+    padding: 0 20px;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-search i {
+    color: white;
+    cursor: pointer;
+    padding: 15px 20px;
+}
+
+.nav-search i:hover {
+    background-color: crimson;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    font-size: 0.9rem;
+}
+
+.links a:hover {
+    height: 100%;
+    background-color: grey;
+    color: black;
+}
+
+.home {
+    height: 100vh;
+    width: 100%;
+}
+
+.home-container {
+    position: relative;
+}
+
+.home-image {
+    background-color: brown;
+    height: 100vh;
+    width: 100%;
+}
+
+.home-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.home-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5vh 0;
+    color: white;
+}
+
+.home-info h1 {
+    line-height: 5rem;
+    font-size: 2rem;
+}
+
+.home-info p {
+    font-size: 0.9rem;
+}
