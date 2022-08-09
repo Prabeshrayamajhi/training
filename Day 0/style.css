@@ -10,14 +10,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-
     scroll-behavior: smooth;
-
 }
-
-/* body {
-    background-color: aqua;
-} */
 
 header {
     position: fixed;
@@ -70,21 +64,25 @@ nav {
 .home {
     height: 100vh;
     width: 100%;
+    background-image: url(./assets/ny.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change 6s infinite;
+    margin-top: 50px;
+}
+
+@keyframes change{
+    0%, 100%{
+        background-image: url(./assets/cave.jpg);
+    }
+    50%{
+        background-image: url(./assets/chicago.jpg);
+    }
 }
 
 .home-container {
     position: relative;
-}
-
-.home-image {
-    background-color: brown;
-    height: 100vh;
-    width: 100%;
-}
-
-.home-image img {
-    height: 100%;
-    width: 100%;
 }
 
 .home-info {
@@ -113,28 +111,21 @@ nav {
 }
 
 
-
-
 /* brands */
 
 .brands{
     height: 95vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     flex-direction: column;
-    
     padding: 90px 0 60px 0;
-    /* background-color: blue; */
 }
 
 .brands-heading{
     height: 5rem;
     width: 100%;
-    text-align: center;
-    
+    text-align: center;  
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -161,7 +152,6 @@ nav {
 }
 
 .artists-container{
-    /* background-color: aqua; */
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -182,20 +172,16 @@ nav {
 /* tour */
 
 .tour{
-
     padding: 3vh 0;
     height: 120vh;
     background-color: var(--main-color);
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: var(--text-primary-color);
-
     padding: 5rem 0;
-
     gap: 3rem;
 }
 
@@ -218,7 +204,6 @@ nav {
     flex-direction: column;
     text-align: left;
     width: 100%;
-
     align-items: center;
     justify-content: center;
 }
@@ -229,11 +214,9 @@ nav {
     color: var(--main-color);
     margin: 0 auto;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-
     display: flex;
     flex-direction: row;
-   align-items: center;
-
+    align-items: center;
     padding:10px;
 }
 
@@ -253,7 +236,6 @@ nav {
 
 
 .tour-card-container{
-    /* background-color: aqua; */
     display: flex;
     flex-direction: row;
     gap: 1.4rem;
@@ -307,26 +289,22 @@ nav {
     width: 55%;
     background-color: var(--main-color);
 }
-/* tour closed */
 
+
+/* tour closed */
 
 
 /* contact */
 
 .contact{
     height: 65vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     background-color: var(--text-primary-color);
-
     text-align: center;
-
     gap: 3rem;
-
     padding: 50px 0;
 }
 
@@ -350,12 +328,10 @@ nav {
     flex-direction: row;
     width: 65%;
     margin: 0 auto;
-    /* border: 2px solid black; */
     justify-content: space-around;
 }
 
 .contact-left{
-    /* background-color: blue; */
     text-align: left;
     padding: 20px;
 }
@@ -385,7 +361,6 @@ nav {
 
 .contact-right{
     width: 40%;
-    /* background-color: crimson; */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -395,12 +370,10 @@ nav {
 .contact-right input{
    padding:  15px;
    border: 1px solid rgba(0, 0, 0, 0.6);
-
 }
 
 .contact-same-line{
     width: 25vw;
-    /* background-color: blue ; */
     display: flex;
     justify-content: space-between;
 }
@@ -412,11 +385,9 @@ nav {
 
 .contact-diff-line input{
     width: 25vw;
-
 }
 
 .button{
-    /* background-color: aqua; */
     display: flex;
     justify-content: flex-end;
     width: 25vw;
@@ -438,21 +409,20 @@ nav {
 }
 
 
-
-
 /* contact ends */
-
-
 
 
 .map{
     height: 117vh;
-    /* background-color: blue; */
+    background: url(./assets/map.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.map img{
+/* .map img{
     width: 100%;
-}
+} */
 
 
 .footer{

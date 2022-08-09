@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --main-color: black;
+    --text-primary-color: white;
+}
+
+
+@media (max-width: 600px){
+
+    .links{
+        display: none;
+    }
+    
+    .home{
+        height: 50vh;
+        background-color: black;
+    }
+
+    .home-info{
+        display: none;
+    }
+
+    .brands{
+        height: 212vh;
+    }
+
+    .brands-info {
+        width: 87%;
+    }
+
+    .artists-container {
+        flex-direction: column;
+    }
+    
+    .tour{
+        height: 280vh;
+    }
+
+    .tour-dates .date {
+        width: 90%;
+    }
+
+    .tour-card-container {
+        flex-direction: column;
+    }
+
+    .tour-card .tour-image img {
+        width: 22.37rem;
+    }
+
+    .contact{
+
+        height: 80vh;
+        width: 100%;
+    }
+
+    .contact-heading p {
+        margin: 20px 0 0;
+    }
+
+    .contact-division {
+        flex-direction: column;
+    }
+
+    .contact-left {
+        text-align: left;
+        padding: 20px;
+        /* width: 100vw; */
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0 auto;
+    }
+
+    .contact-right {
+        width: 100%;
+    }
+
+    .contact-same-line {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .contact-same-line input{
+        width:100%;
+    }
+
+    .contact-diff-line input {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .map{
+        height: 40vh;
+    }
+
+    .footer{
+        height: 15vh;
+    }
+
+}
+
+
+@media (max-width: 400px){
+    .brands {
+        height: 230vh;
+    }
+}
+
+@media (max-width: 361px){
+
+    .brands{
+        height: 245vh;
+    }
+    .tour{
+        height: 280vh;
+    }
+
+    .tour-card .tour-image img {
+        width: 19.37rem;
+    }
+
+    .contact{
+        height: 85vh;
+    }
+
+    .contact-left {
+        width: 80vw;   
+    }
+
+    .left .contact-logo-label {
+        font-size: 1rem;
+    }
+}
