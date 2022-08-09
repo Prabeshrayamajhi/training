@@ -1,46 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock & Roll</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wave effect</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-
-</head>
-
-<body>
+  <body>
     <header>
-        <nav class="nav">
-            <div class="links">
-                <a href="#" class="link">home</a>
-                <a href="#" class="link">Brand</a>
-                <a href="#" class="link">tour</a>
-                <a href="#" class="link">contact</a>
-                <a href="#" class="link">more</a>
-            </div>
-            <div class="nav-search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-        </nav>
+      <nav class="nav">
+        <div class="links">
+          <a href="#home" class="link">home</a>
+          <a href="#brands" class="link">Brand</a>
+          <a href="#tour" class="link">tour</a>
+          <a href="#contact" class="link">contact</a>
+          <a href="#" class="link">more</a>
+        </div>
+        <div class="nav-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </nav>
     </header>
 
-
-    <section class="home">
-        <div class="home-container">
-            <div class="home-image">
-                <img src="./ny.jpg" alt="" srcset="">
-            </div>
-            <div class="home-info">
-                <h1>Prabesh Rayamajhi</h1>
-                <p>newyork time roman and i am hero</p>
-            </div>
+    <section class="home" id="home">
+      <div class="home-container">
+        <div class="home-image">
+          <img src="./ny.jpg" alt="" srcset="" />
         </div>
+        <div class="home-info">
+          <h1>Prabesh Rayamajhi</h1>
+          <p>newyork time roman and i am hero</p>
+        </div>
+      </div>
     </section>
-</body>
 
-<script src="./main.js"></script>
+    <section id="brands" class="brands">
+      <div class="brands-heading">
+        <h1>The brand</h1>
+        <p>We love music</p>
+      </div>
+      <div class="brands-info">
+        <p>
+          We have created a fictional band website. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+      </div>
 
+      <div class="artists-container">
+        <div class="artist">
+          <p>Prabesh</p>
+          <img
+            src="https://www.w3schools.com/w3images/bandmember.jpg"
+            alt="artist"
+          />
+        </div>
+
+        <div class="artist">
+          <p>ankit</p>
+          <img
+            src="https://www.w3schools.com/w3images/bandmember.jpg"
+            alt="artist"
+          />
+        </div>
+
+        <div class="artist">
+          <p>siddhartha</p>
+          <img
+            src="https://www.w3schools.com/w3images/bandmember.jpg"
+            alt="artist"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="tour" id="tour">
+      <div class="tour-heading">
+        <h1>Tour Dates</h1>
+        <p>Remember to book your tickets!</p>
+      </div>
+
+      <div class="tour-dates">
+        <div class="date">
+          <p>September</p>
+          <span>sold out</span>
+        </div>
+
+        <div class="date">
+          <p>Octuber</p>
+          <span>sold out</span>
+        </div>
+
+        <div class="date">
+          <p>december</p>
+          <!-- <span>sold out</span> -->
+        </div>
+      </div>
+
+      <div class="tour-card-container">
+        <div class="tour-card">
+          <div class="tour-image">
+            <img
+              src="https://www.w3schools.com/w3images/newyork.jpg"
+              alt="newyork"
+            />
+          </div>
+          <div class="card-contents">
+            <h3>new york</h3>
+            <p>fri 27 nov 2016</p>
+            <span
+              >Praesent tincidunt sed tellus ut rutrum sed vitae justo.</span
+            >
+            <a href="#">Buy tickets</a>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-image">
+            <img
+              src="https://www.w3schools.com/w3images/paris.jpg"
+              alt="newyork"
+            />
+          </div>
+          <div class="card-contents">
+            <h3>Paris</h3>
+            <p>Sat 28 Nov 2016</p>
+            <span
+              >Praesent tincidunt sed tellus ut rutrum sed vitae justo.</span
+            >
+            <a href="#">Buy tickets</a>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-image">
+            <img
+              src="https://www.w3schools.com/w3images/sanfran.jpg"
+              alt="newyork"
+            />
+          </div>
+          <div class="card-contents">
+            <h3>San Francisco</h3>
+            <p>Sun 29 Nov 2016</p>
+            <span
+              >Praesent tincidunt sed tellus ut rutrum sed vitae justo.</span
+            >
+            <a href="#">Buy tickets</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-heading">
+        <h1>contact</h1>
+        <p>Fan? Drop a note!</p>
+      </div>
+
+      <div class="contact-division">
+        <div class="contact-left">
+          <div class="left-wrapper">
+            <div class="location left">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="contact-logo-label">Chicago, US</div>
+            </div>
+
+            <div class="phone left">
+              <i class="fa-solid fa-phone"></i>
+              <div class="contact-logo-label">Phone: +00 151515</div>
+            </div>
+
+            <div class="email left">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="contact-logo-label">Email: mail@mail.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="contact-same-line">
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email" />
+          </div>
+          <div class="contact-diff-line">
+            <input type="text" placeholder="message" />
+          </div>
+          <div class="button">
+            <button>Send</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="map" class="map">
+      <img src="./map.jpg" alt="" />
+    </section>
+
+    <div class="footer">
+      <h3>
+        made by
+        <a href="https://www.ujjwalbhandarii.com.np/"> ujjwal </a>
+        &
+        <a href="https://prabeshrayamajhi.github.io/prabesh.pg/"> prabesh </a>
+      </h3>
+      <div class="footer-logos"></div>
+    </div>
+  </body>
+
+  <script src="./main.js"></script>
 </html>

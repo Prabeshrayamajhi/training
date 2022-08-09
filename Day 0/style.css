@@ -1,27 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --main-color: black;
+    --text-primary-color: white;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+
+    scroll-behavior: smooth;
+
 }
 
-body {
-    /* background-color: aqua; */
-}
+/* body {
+    background-color: aqua;
+} */
 
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000000000000;
+    z-index: 3;
 }
 
 nav {
     padding: 0 20px;
     height: 50px;
-    background-color: black;
+    background-color: var(--main-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,13 +38,16 @@ nav {
 }
 
 .nav-search i {
-    color: white;
+    color: var(--text-primary-color);
+    font-size: 1.2rem;
     cursor: pointer;
     padding: 15px 20px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .nav-search i:hover {
     background-color: crimson;
+    color: var(--main-color);
 }
 
 .links a {
@@ -44,6 +56,9 @@ nav {
     text-transform: uppercase;
     padding: 15px 25px;
     font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .links a:hover {
@@ -82,15 +97,369 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 5vh 0;
+    padding: 10vh 0;
     color: white;
 }
 
 .home-info h1 {
-    line-height: 5rem;
-    font-size: 2rem;
+    line-height: 4rem;
+    font-size: 2.2rem;
+    letter-spacing: 3px;
 }
 
 .home-info p {
     font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+
+
+
+/* brands */
+
+.brands{
+    height: 95vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    
+    padding: 90px 0 60px 0;
+    /* background-color: blue; */
+}
+
+.brands-heading{
+    height: 5rem;
+    width: 100%;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.brands-heading h1{
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.brands-heading p{
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.brands-info{
+    margin: 2rem auto;
+    width: 50%;
+    line-height: 1.9rem;
+}
+
+.artists-container{
+    /* background-color: aqua; */
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 1rem  0;
+}
+
+.artist p{
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+/* brands closed */
+
+
+
+/* tour */
+
+.tour{
+
+    padding: 3vh 0;
+    height: 120vh;
+    background-color: var(--main-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-primary-color);
+
+    padding: 5rem 0;
+
+    gap: 3rem;
+}
+
+.tour-heading h1{
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.tour-heading p{
+    margin: 20px 0;
+    font-style: italic;
+    color: rgb(131, 131, 131);
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.tour-dates{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.tour-dates .date{
+    width: 50%;
+    background-color:var(--text-primary-color);
+    color: var(--main-color);
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+
+    padding:10px;
+}
+
+.date p{
+    font-size: 1rem;
+    color:rgba(0, 0, 0, 0.6);
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.date span{
+    margin: 0  0  0 1rem;
+    background-color: red;
+    padding: 4px 10px;
+    color: var(--text-primary-color);
+}
+
+
+.tour-card-container{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    gap: 1.4rem;
+}
+
+.tour-card{
+    background-color: var(--text-primary-color);
+    color: var(--main-color);
+}
+
+.tour-card .tour-image img{
+    width: 16.37rem;
+    cursor: pointer;
+}
+
+.tour-card .tour-image img:hover{
+    background-color: black;
+    opacity: 0.8;
+}
+
+.tour-card .card-contents{
+    display: flex;
+    flex-direction: column;
+    width: 16rem;
+    gap: 1rem;
+    text-align: left;
+    padding: 2.4rem 1rem;
+}
+
+.card-contents h3{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.card-contents p{
+    font-size: 0.95rem;
+    font-weight: 500;
+    color:rgba(0, 0, 0, 0.6);
+    text-transform: capitalize;
+}
+
+.card-contents a{
+    text-decoration: none;
+    color: var(--text-primary-color);
+    font-size: 1.12rem;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 15px;
+    width: 55%;
+    background-color: var(--main-color);
+}
+/* tour closed */
+
+
+
+/* contact */
+
+.contact{
+    height: 65vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--text-primary-color);
+
+    text-align: center;
+
+    gap: 3rem;
+
+    padding: 50px 0;
+}
+
+.contact-heading h1{
+    letter-spacing: 3px;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.contact-heading p{
+    margin: 20px 0;
+    font-style: italic;
+    color: rgb(131, 131, 131);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.contact-division{
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    margin: 0 auto;
+    /* border: 2px solid black; */
+    justify-content: space-around;
+}
+
+.contact-left{
+    /* background-color: blue; */
+    text-align: left;
+    padding: 20px;
+}
+
+.left-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-left .left{
+    display: flex;
+    flex-direction: row;
+    gap: 1.8rem;
+    color: var(--main-color);
+}
+
+.left i{
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.left .contact-logo-label{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.contact-right{
+    width: 40%;
+    /* background-color: crimson; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-right input{
+   padding:  15px;
+   border: 1px solid rgba(0, 0, 0, 0.6);
+
+}
+
+.contact-same-line{
+    width: 25vw;
+    /* background-color: blue ; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-same-line input{
+    width: 12.5rem;
+}
+
+
+.contact-diff-line input{
+    width: 25vw;
+
+}
+
+.button{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: flex-end;
+    width: 25vw;
+}
+
+.button button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--text-primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+::placeholder{
+   font-size: 1rem;
+   color:rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+/* contact ends */
+
+
+
+
+.map{
+    height: 117vh;
+    /* background-color: blue; */
+}
+
+.map img{
+    width: 100%;
+}
+
+
+.footer{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color:rgba(0, 0, 0, 0.6);
 }
