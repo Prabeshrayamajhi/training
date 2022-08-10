@@ -73,10 +73,10 @@ nav {
 }
 
 @keyframes change{
-    0%, 100%{
+    33%{
         background-image: url(./assets/cave.jpg);
     }
-    50%{
+    66%{
         background-image: url(./assets/chicago.jpg);
     }
 }
