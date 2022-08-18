@@ -1,0 +1,78 @@
+.weather-wrapper{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.weather-wrapper::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: url(../../Assets/weather.avif) no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background-color: aqua;
+}
+
+.weather-container{
+    min-width: 500px;
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.weather-container input{
+    padding: 1rem;
+    border-radius: 0.3rem;
+    border: 1px solid black;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    width: 70%;
+    font-size: 1rem;
+    margin: 2rem 0;
+}
+
+.input-field button{
+    background: transparent;
+    border: 1px solid black;
+    padding: 14px 10px;
+}
+
+::placeholder{
+    color: black;
+    font-size: 1rem;
+}
+
+.weather-stats{
+    margin: 5rem 0;
+}
+
+.weather-container h2{
+    margin: 1rem 0;
+    font-size: 4rem;
+}
+
+
+.weather-container .h4s{
+    font-size: 1rem;
+    margin: 2rem;
+}
+
+.h4s h4{
+    margin: 0.5rem 0;
+}
+
+
+
+

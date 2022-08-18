@@ -1,0 +1,16 @@
+.aboutMe{
+    height: 100vh;
+    background-color: greenyellow;
+    width: 100%;
+    padding: 6.5rem 0;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutMe p{
+    margin: 2rem 0;
+    width: 30%;
+}
