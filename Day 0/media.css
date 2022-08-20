@@ -13,7 +13,7 @@
     }
     
     .home{
-        height: 50vh;
+        /* height: 50vh; */
         background-color: black;
     }
 
@@ -22,7 +22,7 @@
     }
 
     .brands{
-        height: 212vh;
+        /* height: 212vh; */
     }
 
     .brands-info {
@@ -34,7 +34,7 @@
     }
     
     .tour{
-        height: 280vh;
+        /* height: 280vh; */
     }
 
     .tour-dates .date {
@@ -51,7 +51,7 @@
 
     .contact{
 
-        height: 80vh;
+        /* height: 80vh; */
         width: 100%;
     }
 
@@ -113,17 +113,17 @@
 
 @media (max-width: 400px){
     .brands {
-        height: 230vh;
+        /* height: 230vh; */
     }
 }
 
 @media (max-width: 361px){
 
     .brands{
-        height: 245vh;
+        /* height: 245vh; */
     }
     .tour{
-        height: 280vh;
+        /* height: 280vh; */
     }
 
     .tour-card .tour-image img {
@@ -131,7 +131,7 @@
     }
 
     .contact{
-        height: 85vh;
+        /* height: 85vh; */
     }
 
     .contact-left {

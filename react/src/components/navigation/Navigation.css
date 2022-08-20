@@ -1,0 +1,25 @@
+.header{
+    height: 70px;
+    background-color: blue;
+    width: 100%;
+    transition: 0.4s ease;
+}
+
+.header.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: ease;
+}
+
+.nav{
+    background-color: white;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+}
+
+.nav-logo img{
+    height: 40px;
+    border-radius: 50%;
+}
